@@ -24,18 +24,16 @@ Copy the generators
 
 Create a recorded meeting, share desktop and webcam, and write in the chat window START or STOP when you want to start or stop the recording, log out.
 
-Open **test.rb** and set a new value for the *meeting_id* according to the one you created
+Check with bbb-record --watch until you can see "recbutton" under 'process' and 'publish'
 
-Run **test.rb**	
-
-	sudo ruby test.rb
-
-Check the resultant files in */tmp/rb_test*
-
+Now you have two flv files, one with webcam + audio, and other only with deskshare.
 
 ## TO DO
 
-* In production, comment part of the method *get_start_and_stop_rec_events(events_xml)* in **events.rb**
+* Create a playback for the created webcam and deskshare
+
+
+* In production, when the client was implemented, comment a part of the method *get_start_and_stop_rec_events(events_xml)* in **events.rb**
 
 	
 * Use these generators and its new methods in the presentation workflow
